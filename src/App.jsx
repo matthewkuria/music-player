@@ -19,7 +19,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Auth />} />
           <Route path="/signup" element={<Signup />} />
-
           <Route path="/:userId/player" element={<MusicPlayer />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>

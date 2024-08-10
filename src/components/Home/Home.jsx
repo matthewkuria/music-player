@@ -14,9 +14,9 @@ const Home = () => {
         </div>
       </nav>
       <div className="content">
-        <h1>Welcome to Mplayer Website</h1>
-        <p>Store your favourite songs and play!!!</p>
-        <img src="src\assets\logo.jpg" alt="" />
+        <h1>Welcome to Muziki Website</h1>
+        <p>Upload your favourite songs and play!!!</p>
+        <img src="src\assets\product02.png" alt="" />
       </div>
 
     </div>
