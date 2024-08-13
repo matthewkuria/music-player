@@ -49,7 +49,7 @@ const MusicUpload = ({ onUploadSuccess }) => {
   return (
     <div>
       <input type="file" multiple onChange={handleFileChange} />
-      <button onClick={handleFileUpload} disabled={!selectedFiles}>
+      <button className='bg-blue-500 rounded-md p-2 text-white hover:bg-blue-400' onClick={handleFileUpload} disabled={!selectedFiles}>
         Upload
       </button>
       {uploading && <p>Uploading...</p>}
