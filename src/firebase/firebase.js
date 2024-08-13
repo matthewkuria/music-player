@@ -19,7 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-const storage = getStorage();
+const storage = getStorage(app);
 
 // Create a storage reference from our storage service
 const storageRef = ref(storage);
@@ -28,8 +28,8 @@ const storageRef = ref(storage);
 
 
 
-// const db = getFirestore(app);
-// const real=getDatabase(app);
+const db = getFirestore(app);
+const real=getDatabase(app);
 
 
 export { auth, storageRef};
