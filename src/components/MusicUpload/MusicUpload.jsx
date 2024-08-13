@@ -32,7 +32,7 @@ const MusicUpload = ({ onUploadSuccess }) => {
     try {
       const uploadPromises = Array.from(selectedFiles).map(async (file) => {
         const fileName = file.name;
-        const fileRef = ref(storage, `music/${fileName}`);
+        const fileRef = ref(storage, `music/${user.uid}/${fileName}`);
         await uploadBytes(fileRef, file);
       });
 

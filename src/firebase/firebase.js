@@ -1,12 +1,9 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
 import { getStorage, ref } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
+// (Optional) Import for Authentication
+import { getAuth } from "firebase/auth";
 
-import {getDatabase} from 'firebase/database'
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC49qdbhsXm5m6Y8whiS5MFyuyUJfuSX7w",
   authDomain: "music-player-25bdb.firebaseapp.com",
@@ -17,19 +14,10 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-
 const storage = getStorage(app);
-
+const db = getFirestore(app);
+const auth = getAuth(app); // (Optional)
 // Create a storage reference from our storage service
 const storageRef = ref(storage);
 
-// const storage = getStorage(app);
-
-
-
-const db = getFirestore(app);
-const real=getDatabase(app);
-
-
-export { auth, storageRef};
+export { storage, db, auth, storageRef };
