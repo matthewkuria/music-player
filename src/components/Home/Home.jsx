@@ -16,7 +16,7 @@ const Home = () => {
       <div className="content">
         <h1>Welcome to Muziki Website</h1>
         <p>Upload your favourite songs and play!!!</p>
-        <img src="src\assets\product02.png" alt="" />
+        <img src="src/assets/music-player.jpeg" alt="" />
       </div>
 
     </div>
