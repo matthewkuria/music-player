@@ -9,7 +9,7 @@ const Home = () => {
       <nav>
         <div className="nav-container">
           <div className="">
-            <p className="text-3xl">Muziki Website</p>
+            <p className="text-3xl">Muziki.</p>
           </div>
           <Link to="/login" className="login-button">
             Login
