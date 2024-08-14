@@ -19,7 +19,7 @@ body {
   
   .nav-container {
     display: flex;
-    justify-content:end; /* Corrected value */
+    justify-content: space-between; /* Corrected value */
     align-items: center;
     max-width: 1200px; /* Adjust the max-width as needed */
     margin: 0 auto; /* Center the container horizontally */
@@ -47,16 +47,9 @@ body {
    background-position: center;
    background-size: cover;
    height: 100vh;
+   opacity: 1;
   }
   img{
-    width: 100%;
-
+    width: 20%;
   }
   
-  h1 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }

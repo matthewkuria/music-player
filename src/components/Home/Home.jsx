@@ -8,17 +8,20 @@ const Home = () => {
     <div>
       <nav>
         <div className="nav-container">
+          <div className="">
+            <p className="text-3xl">Muziki Website</p>
+          </div>
           <Link to="/login" className="login-button">
             Login
           </Link>
         </div>
       </nav>
-      <div className="content">
-        <div className="">
-           <h1>Welcome to Muziki Website</h1>
-            <p>Upload your favourite songs and play!!!</p>
+      <div className="content ">
+        <div className=" text-white mt-20 ml-20 relative max-w-lg">
+           <h1 className='text-white text-6xl font-bold'>Welcome to Muziki Website</h1>
+            <p>The best Web music player</p>
        </div>
-        {/* <img src="src/assets/music-player.jpeg" alt="" /> */}
+        <img src="src/assets/product02.png" alt="The headphone image" className=' absolute top-20 right-0'/>
       </div>
 
     </div>
