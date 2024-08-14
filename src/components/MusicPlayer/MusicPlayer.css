@@ -1,63 +1,41 @@
-.musicplayer-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  button {
-    margin-bottom: 10px;
-  }
-  
-  .columns {
-    display: flex;
-  }
-  
-  .column {
-    flex: 1;
-    margin-right: 10px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  thead th, tbody td {
-    border: 1px solid #393939;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  tbody td {
-    vertical-align: top;
-  }
-  
-  .song-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .song-list li {
-    margin-bottom: 10px;
-  }
-  
-  .delete {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .delete:hover {
-    background-color: #d32f2f;
-  }
-  
-  .logout{
-    background-color: #007bff;
-  }
-  
+/* src/MusicPlayer.css */
+.player-container {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  margin: 0 10px;
+  cursor: pointer;
+}
