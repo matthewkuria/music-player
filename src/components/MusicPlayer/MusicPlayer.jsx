@@ -13,7 +13,7 @@ const MusicPlayer = () => {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="70"
           image={item.cover}
           alt="green iguana"
         />
@@ -22,8 +22,20 @@ const MusicPlayer = () => {
             {item.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+               <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 2 }}>
+                <IconButton color="inherit" >
+                  <FaBackward />
+                </IconButton>
+                <IconButton color="inherit" >
+                 <FaPlay/>
+                </IconButton>
+                <IconButton color="inherit">
+                  <FaStop />
+                </IconButton>
+                <IconButton color="inherit" >
+                  <FaForward />
+                </IconButton>
+              </Box>
           </Typography>
         </CardContent>
       </CardActionArea>
