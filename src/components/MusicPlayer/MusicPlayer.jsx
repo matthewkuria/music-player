@@ -1,4 +1,3 @@
-// src/MusicPlayer.js
 import React, { useState, useRef, useEffect } from 'react';
 import { Card, CardContent, CardMedia, Typography, IconButton, Slider, Box } from '@mui/material';
 import { FaPlay, FaPause, FaStop, FaBackward, FaForward, FaVolumeUp } from 'react-icons/fa';
